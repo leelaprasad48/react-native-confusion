@@ -19,7 +19,6 @@ class About extends Component {
         super(props);
         this.state = {
             historyHeading: "Our History",
-            leadershipHeading: "Corporate Leadership",
             leaders: LEADERS
         }
     }
@@ -46,7 +45,7 @@ class About extends Component {
         return (
             <ScrollView>
                 <History />
-                <Card title={this.state.leadershipHeading}>
+                <Card title={"Corporate Leadership"}>
                     <FlatList
                         data={this.state.leaders}
                         renderItem={renderMenuItem}

@@ -4,12 +4,6 @@ import { Text } from 'react-native';
 
 
 class Contact extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            heading: "Our Address"
-        }
-    }
 
     static navigationOptions = {
         title: 'Contact Us'
@@ -17,7 +11,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <Card title={this.state.heading}>
+            <Card title={"Contact Information"}>
                 <Text>{`121, Clear Water Bay Road
 Clear Water Bay, Kowloon
 HONG KONG
